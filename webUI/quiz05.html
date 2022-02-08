@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheets/quiz05.css" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+
+
+    <title>paho.mqtt_py_demo_team</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">rapa robot demo UI</a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Navigation
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">start</a>
+                            <a href="#" class="dropdown-item">show me the map</a>
+
+                            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                                D
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">E</a>
+                                <a class="dropdown-item" href="#">F</a>
+                                <a class="dropdown-item" href="#">G</a>
+                                <a class="dropdown-item" href="#">H</a>
+                            </div>
+
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-header"></div>
+                            <a href="#" class="dropdown-item">save the trace into map</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Action</a>
+                            <a href="#" class="dropdown-item">Another action</a>
+                            <a href="#" class="dropdown-item">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-header">Nav header</div>
+                            <a href="#" class="dropdown-item">Separated link</a>
+                            <a href="#" class="dropdown-item">One more separated link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Action</a>
+                            <a href="#" class="dropdown-item">Another action</a>
+                            <a href="#" class="dropdown-item">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-header">Nav header</div>
+                            <a href="#" class="dropdown-item">Separated link</a>
+                            <a href="#" class="dropdown-item">One more separated link</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <div class="navbar-collapse " id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Main menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">A</a>
+                    <a class="dropdown-item" href="#">B</a>
+                    <a class="dropdown-item" href="#">C</a>
+                    <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        D
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">E</a>
+                        <a class="dropdown-item" href="#">F</a>
+                        <a class="dropdown-item" href="#">G</a>
+                        <a class="dropdown-item" href="#">H</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1000">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+
+        <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active">
+                <img src="images/robot1.jpeg" alt="New York Landscape Image" class="d-block w-100"
+                    style="height: 500px;">
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h1>Tomorrow with robots</h1>
+                    <h3>Dreaming of robots that will replace human labor</h3>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/robot2.webp" alt="Seoul Landscape Image" class="d-block w-100" style="height: 500px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Tomorrow with robots</h1>
+                    <h3>Dreaming of a robot that can eliminate human pain</h3>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/robot3.jpg" alt="Athens Landscape Image" class="d-block w-100" style="height: 500px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Tomorrow with robots</h1>
+                    <h3>Dreaming of a robot that can be a friend of humans</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+        <a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+    <div class="jumbotron">
+        <h1>Future with robots</h1>
+        <p class="lead">
+            We dream of robots that coexists with humans, becomes a friend of humans, alleviates human suffering, and
+            replaces human labor.
+        </p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col my-4">
+            <div class="card border-0">
+                <!-- <h5 class="card-header">Voted #1</h5> -->
+                <img src="images/london1.jpg" class="card-img-top mx-auto d-block" alt="lion sitting and looking around"
+                    style="height: 220px" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Lions</h5>
+                    <!-- <h6 class="card-subtitle">Lions Are Amazing</h6> -->
+                    <p class="card-text">
+                        The lion (Panthera leo) is a large mammal of the Felidae (cat) family. Some large males weigh
+                        over 250 kg (550 lb).
+                        Today, wild lions live in sub-Saharan Africa and in Asia. Lions are adapted for life in
+                        grasslands and mixed areas
+                        with trees and grass. The relatively small females are fast runners over short distances, and
+                        coordinate their hunting of herd animals.
+                    </p>
+                    <div class="row justify-content-center">
+                        <a href="https://en.wikipedia.org/wiki/Black_panther" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+                <!-- <div class="card-footer">
+                    from Wikipedia
+                </div> -->
+            </div>
+        </div>
+        <div class="col my-4">
+            <div class="card border-0">
+                <!-- <h5 class="card-header">Voted #2</h5> -->
+                <img src="images/london2.jpg" class="card-img-top mx-auto d-block" alt="cheetah looking around"
+                    style="height: 220px" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Cheetahs</h5>
+                    <!-- <h6 class="card-subtitle">Cheetahs Are Really Fast</h6> -->
+                    <p class="card-text">
+                        The cheetah (Acinonyx jubatus; /ˈtʃiːtə/) is a large cat of the subfamily Felinae that occurs in
+                        North, Southern and East Africa, and a few localities in Iran.
+                        It inhabits a variety of mostly arid habitats like dry forests, scrub forests, and savannahs.
+                        The species is IUCN Red Listed as Vulnerable, as it suffered a
+                        substantial decline in its historic range in the 20th century...
+                    </p>
+                    <div class="row justify-content-center">
+                        <a href="https://en.wikipedia.org/wiki/Black_panther" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+                <!-- <div class="card-footer">
+                    from Wikipedia
+                </div> -->
+            </div>
+        </div>
+        <div class="col my-4">
+            <div class="card border-0">
+                <!-- <h5 class="card-header">Voted #3</h5> -->
+                <img src="images/london3.jpg" class="card-img-top mx-auto d-block" alt="panther looking around"
+                    style="height: 220px" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Black Panthers</h5>
+                    <!-- <h6 class="card-subtitle">Black Panthers Are Really Scary</h6> -->
+                    <p class="card-text">
+                        A black panther is the melanistic colour variant of any Panthera, particularly of the leopard
+                        (P. pardus) in Asia and Africa, and the jaguar (P. onca) in the Americas.
+                    </p>
+                    <div class="row justify-content-center">
+                        <a href="https://en.wikipedia.org/wiki/Black_panther" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+                <!-- <div class="card-footer">
+                    from Wikipedia
+                </div> -->
+            </div>
+        </div>
+
+        <div class="col my-4">
+            <div class="card border-0">
+                <!-- <h5 class="card-header">Voted #1</h5> -->
+                <img src="images/london4.jpg" class="card-img-top mx-auto d-block" alt="lion sitting and looking around"
+                    style="height: 220px" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Lions</h5>
+                    <!-- <h6 class="card-subtitle">Lions Are Amazing</h6> -->
+                    <p class="card-text">
+                        The lion (Panthera leo) is a large mammal of the Felidae (cat) family. Some large males weigh
+                        over 250 kg (550 lb).
+                        Today, wild lions live in sub-Saharan Africa and in Asia. Lions are adapted for life in
+                        grasslands and mixed areas
+                        with trees and grass. The relatively small females are fast runners over short distances, and
+                        coordinate their hunting of herd animals.
+                    </p>
+                    <div class="row justify-content-center">
+                        <a href="https://en.wikipedia.org/wiki/Black_panther" class="btn btn-primary">Learn more</a>
+                    </div>
+
+                </div>
+                <!-- <div class="card-footer text-center">
+                    <a href="https://simple.wikipedia.org/wiki/Lion" class="btn btn-primary">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav nav-tabs mb-4">
+        <li class="nav-item"><a class="nav-link active" href="#dashboard" data-toggle="tab">Thesqua.re</a></li>
+        <li class="nav-item"><a class="nav-link" href="#payments" data-toggle="tab">Payments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#invoices" data-toggle="tab">Invoices</a></li>
+        <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="dashboard" class="tab-pane active">
+            <table class="table table-bordered table-striped table-sm">
+                <!-- <tr><th colspan="2">Travel Plan</th></tr>
+                <tr class="table-active"><th>(active) Action</th><th>Due</th></tr> -->
+                <tr>
+                    <td class="td-border">City Reach Serviced Apartments, Limehouse</td>
+                    <td class="td-border">min stay : 3 nights</td>
+                    <td class="td-border">nearest transport: Limehost</td>
+                    <td class="td-border">&#163;597</td>
+                </tr>
+                <tr>
+                    <td>Contemporary Times Square Serviced Apartments</td>
+                    <td>min stay : 3 nights</td>
+                    <td>nearest transport: Limehost</td>
+                    <td>&#163;597</td>
+                </tr>
+                <tr>
+                    <td>Altitude Point Serviced Apartments, Aldgate</td>
+                    <td>min stay : 3 nights</td>
+                    <td>nearest transport: Limehost</td>
+                    <td>&#163;597</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="payments" class="tab-pane">
+            <p>
+                <strong>Payments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+        <div id="invoices" class="tab-pane">
+            <p>
+                <strong>Invoices:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+        <div id="settings" class="tab-pane">
+            <p>
+                <strong>Settings:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script> -->
+
+</body>

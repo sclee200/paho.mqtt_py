@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>100</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 24pt &quot;Jalnan OTF&quot;;
+font: 25pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>길 안내</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>90</y>
+      <width>581</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 26pt &quot;BM DoHyeon OTF&quot;;
+font: 35pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>A to B 경로를 정해주세요</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Nav_Window_Cancle_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1460</x>
+      <y>130</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 36pt &quot;.AppleSystemUIFont&quot;;</string>
+    </property>
+    <property name="text">
+     <string>⟲</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Show_Map_Btn">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>250</y>
+      <width>611</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/home/lsc/mqqt_robot/paho.mqtt_py_demo_team/
+img/map.png);</string>
+    </property>
+    <property name="text">
+     <string>show me the map...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>790</y>
+      <width>761</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>A : turn left4 | B : turn left3 | C : turn left2 | D : turn left1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>840</y>
+      <width>781</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>E : turn rightt1 | F : turn right2 | G : turn right3 | H : turn right4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>890</y>
+      <width>751</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>h : forward | j : stop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Command_Start_Btn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>570</y>
+      <width>551</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>please input your command key</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Map_Save_Btn">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>570</y>
+      <width>611</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>map save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Nav_Action_Btn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>250</y>
+      <width>551</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>start!</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../map.qrc"/>
+ </resources>
+ <connections/>
+</ui>

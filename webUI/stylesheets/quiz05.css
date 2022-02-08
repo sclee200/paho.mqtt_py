@@ -1,0 +1,34 @@
+ .card img {
+    height:200px;
+    width:200px;
+    overflow:hidden;
+    border-radius:50%;
+    /* width:200px;
+    height:200px;
+    border-radius:50%;
+    background-image:url("http://placekitten.com/g/200/400");
+    display:block;
+    background-position-y:25%  */
+  }
+
+  .pull-center {
+    /* float: right; */
+    left: 50%;
+  }
+
+  .td-border {
+    border-left: none;
+    border: none;
+  }
+
+  table, tr, td{
+    border:none;
+   }
+   
+   .table-bordered, .table-bordered > tbody > tr > td {
+    border:none !important; /*if you use the ! important rule, it will override ALL previous styling rules for that specific property on that element!*/
+    }
+
+
+
+     
